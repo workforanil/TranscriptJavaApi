@@ -16,7 +16,7 @@ public class Main {
 
         HttpRequest postRequest = HttpRequest.newBuilder()
                 .uri(new URI("https://api.assemblyai.com/v2/transcript"))
-                .header("Authorization", "eab0fbb2194640289f00ea3bc13558d8")
+                .header("Authorization", "enter-your-authorization-key-from-assemblyAI")
                 .POST(HttpRequest.BodyPublishers.ofString(jsonRequest))
                 .build();
 
@@ -31,7 +31,7 @@ public class Main {
 
         HttpRequest getRequest = HttpRequest.newBuilder()
                 .uri(new URI("https://api.assemblyai.com/v2/transcript/" + transcript.getId()))
-                .header("Authorization", "eab0fbb2194640289f00ea3bc13558d8")
+                .header("Authorization", "enter-your-authorization-key-from-assemblyAI")
                 .build();
 
         while(true){
